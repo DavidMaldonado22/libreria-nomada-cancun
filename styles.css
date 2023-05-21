@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    height: 130px;
+    background-color: #F0EFEF;
+    font-family: 'Roboto', sans-serif;
+    /*font-size: 32px;
+    font-weight: 700;
+    color: white;*/
+    border-bottom: 2px solid #3562a9;
+}
+.header img{
+    display: block;
+    width: 50px;
+}
+
+.header li{
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+.link:link{
+    text-decoration: none;
+}
+.link:visited{
+    text-decoration: none;
+}
+.link{
+    color: #3562a9;
+    font-weight:700;
+}
+.link:hover{
+    color: #5F5F5F;
+    border-bottom: 2px solid #5F5F5F;
+}
+
+.tituloCatalogo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.catalogo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+}
+.book{
+    display: grid;
+    width: 70%;
+    margin-bottom: 30px;
+    height: 700px;
+}
+.book img{
+    width: 100%;
+}
+.book span{
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+.book span b{
+    color: #00BB2D;
+}
+.book .titleBook{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.book a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #00BB2D;
+    color: white;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    align-self: end;
+}
+
+@media screen and (min-width: 1000px) {
+    .catalogo{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .header{
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        align-content: center;
+        }
+    .header li{
+        list-style: none;
+        display: inline;
+        margin-right: 50px;
+    }
+    .header img{
+        display: block;
+        width: 70px;
+        margin-left: 70px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+}
