@@ -1,13 +1,14 @@
 <?php
 require_once('connection.php');
 
+$isbn = $_POST['isbn'];
 $title = $_POST['title'];
 $author = $_POST['author'];
 $price = $_POST['price'];
 $picture = $_POST['urlImage'];
 $available = 1;
 
-$sql = "INSERT INTO libros (title, author, price, picture, available) VALUES ('$title', '$author', '$price', '$picture', '$available')";
+$sql = "INSERT INTO libros (isbn, title, author, price, picture, available) VALUES ('$isbn','$title', '$author', '$price', '$picture', '$available')";
 
 if(mysqli_query($link, $sql))
 {

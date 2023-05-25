@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cargar libros a sistema</title>
 </head>
 <body>
     <form method="POST" action="uploadBooks.php" >
+        <label for="isbn">ISBN</label>
+        <input type="text" name="isbn">
+
         <label for="title">Título</label>
         <input type="text" name="title">
 
