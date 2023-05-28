@@ -27,7 +27,7 @@
             function getBooks() {
 
                 const XHR = new XMLHttpRequest();
-                XHR.open('POST', 'returnAllbooks.php', true);
+                XHR.open('POST', 'returnAllBooks.php', true);
                 XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 //XHR.send('value=' + 1);
                 XHR.send();
